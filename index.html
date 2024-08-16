@@ -1,14 +1,19 @@
-<html>
-  <head>
-    <title>Halaman Html Deploy</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1><p id="p" >saya adalah halaman html</p></h1>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML dengan JavaScript</title>
+</head>
+<body>
+    <h1>Halo, Dunia!</h1>
+    <p id="text">Klik tombol di bawah ini untuk melihat aksi JavaScript.</p>
+    <button onclick="ubahTeks()">Klik Saya!</button>
+
     <script>
-      const ok = document.getElementByid("p")
-      ok.addEventListener("click",() => alert("hai"))
+        function ubahTeks() {
+            document.getElementById("text").innerHTML = "Teks telah diubah oleh JavaScript!";
+        }
     </script>
-  </body>
+</body>
 </html>
