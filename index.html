@@ -4,7 +4,11 @@
   </head>
   <body>
     <div class="container">
-      <h1><p>saya adalah halaman html</p></h1>
+      <h1><p id="p" >saya adalah halaman html</p></h1>
     </div>
+    <script>
+      const ok = document.getElementByid("p")
+      ok.addEventListener("click",() => alert("hai"))
+    </script>
   </body>
 </html>
